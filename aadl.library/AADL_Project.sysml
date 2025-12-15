@@ -3,7 +3,7 @@
  * SAE AS-5506D AADL appendix A8
  * OMG SysML v2 */
 
-standard library package AADL_Project {
+/*standard*/ library package AADL_Project {
 
 	public import SI::*; // Propagate definition of unit types, e.g. [s], to users of this package
     private import ScalarValues::Real;

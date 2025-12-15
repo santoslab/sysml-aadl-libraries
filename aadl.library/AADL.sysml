@@ -3,7 +3,7 @@
  * SAE AS-5506D AADL chapters 4 to 10
  * OMG SysML v2 release 2025-02 */
 
-standard library package AADL {
+/*standard*/ library package AADL {
 
 	// Give visibility to all AADL standard property sets enum values with a single import of AADL::*
 	public import AADL_Project::*;
@@ -18,7 +18,7 @@ standard library package AADL {
 
 	// SysMLv2 libraries
 	private import Actions::*;
-	private import Flows::*;
+	//private import Flows::*;
 	private import Interfaces::BinaryInterface;
 
 	enum def ComponentCategory {

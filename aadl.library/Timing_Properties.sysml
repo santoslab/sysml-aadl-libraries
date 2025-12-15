@@ -3,7 +3,7 @@
  * SAE AS-5506D AADL appendix A3
  * OMG SysML v2 */
 
-standard library package Timing_Properties {
+/*standard*/ library package Timing_Properties {
 	
 	private import AADL::*;
     private import AADL_Project::*; 

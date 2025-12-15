@@ -3,7 +3,7 @@
  * SAE AS-5506D AADL appendix A1
  * OMG SysML v2 */
 
- standard library package Deployment_Properties {
+ /*standard*/ library package Deployment_Properties {
 
 	private import AADL_Project::*;
 

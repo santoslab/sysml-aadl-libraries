@@ -3,7 +3,7 @@
  * SAE AS-5506D AADL appendix A4
  * OMG SysML v2 */
 
-standard library package Communication_Properties {
+/*standard*/ library package Communication_Properties {
 	
 	private import AADL_Project::*;
 	

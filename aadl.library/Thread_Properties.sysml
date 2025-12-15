@@ -3,7 +3,7 @@
  * SAE AS-5506D AADL appendix A2
  * OMG SysML v2 */
 
- standard library package Thread_Properties {
+ /*standard*/ library package Thread_Properties {
 
 	private import AADL_Project::*;
 

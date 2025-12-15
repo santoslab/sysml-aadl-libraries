@@ -3,7 +3,7 @@
  * SAE AS-5506D AADL appendix A6
  * OMG SysML v2 */
  
- standard library package Programming_Properties {
+ /*standard*/ library package Programming_Properties {
  	
  	private import AADL_Project::*;
  	

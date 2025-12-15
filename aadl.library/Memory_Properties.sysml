@@ -3,7 +3,7 @@
  * SAE AS-5506D AADL appendix A5
  * OMG SysML v2 */
 
-standard library package Memory_Properties {
+/*standard*/ library package Memory_Properties {
 
 	private import ScalarValues::*;
 	private import AADL_Project::*;
