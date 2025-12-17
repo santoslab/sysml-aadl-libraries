@@ -149,7 +149,7 @@
 
  	*/
 
-	attribute def Time :> ISQ::DurationValue {
+	attribute def Time :> ISQBase::DurationValue {
 		attribute :>> num: ScalarValues::Integer;
 		//  Many properties assume a positive value, e.g. Period
 	}
