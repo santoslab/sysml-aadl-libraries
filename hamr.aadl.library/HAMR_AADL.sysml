@@ -14,6 +14,8 @@ package HAMR_AADL {
     attribute Implementation_Language: HAMR::Implementation_Language;
   }
 
+  part def Struct :> Data;
+
   part def Array :> Data {
     part Base_Type : Data;
 
