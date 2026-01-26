@@ -34,7 +34,8 @@ library package HAMR {
   alias Unbounded for Array_Size_Kinds::Unbounded;
 
 
-  attribute def Implementation_Language :> AADL::Property, Implementation_Languages;
+  //attribute def Implementation_Language :> AADL::Property, Implementation_Languages;
+  alias Implementation_Language for Implementation_Languages;
 
   enum def Implementation_Languages {
     enum Slang;

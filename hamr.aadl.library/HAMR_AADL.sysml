@@ -13,14 +13,4 @@ package HAMR_AADL {
   part def Thread :> AADL::Thread {
     attribute Implementation_Language: HAMR::Implementation_Language;
   }
-
-  part def Struct :> Data;
-
-  part def Array :> Data {
-    part Base_Type : Data;
-
-    attribute Dimensions: ScalarValues::Positive;
-
-    attribute Array_Size_Kind: HAMR::Array_Size_Kinds;
-  }  
 }

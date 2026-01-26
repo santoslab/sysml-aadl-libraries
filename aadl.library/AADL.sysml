@@ -295,6 +295,7 @@
     end port source : Feature;
     end port target : Feature;
 
+    /*
     flow move {
       ref :>> payload : Data;
 
@@ -310,6 +311,7 @@
 
     bind source = move.source;
     bind target = move.target;
+    */
   }
 
   connection def ParameterConnection :> Connection {
@@ -361,6 +363,7 @@
     bind source_queue.EDP = source;
     bind target_queue.EDP = target;
 
+    /*
     flow move {
       ref :>> payload : Data;
 
@@ -376,5 +379,6 @@
 
     bind source_queue.EDP_private = move.source;
     bind target_queue.EDP_private = move.target;
+    */
   }
 }
