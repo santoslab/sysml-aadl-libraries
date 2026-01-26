@@ -53,7 +53,7 @@
 
   // Supported_Dispatch_Protocols: type enumeration
   //    (Periodic, Sporadic, Aperiodic, Timed, Hybrid, Background, <project-specified>);
-  enum def Supported_Dispatch_Protocols {
+  enum def Supported_Dispatch_Protocols :> AADL::Property {
     enum Periodic;
     enum Sporadic;
     enum Aperiodic;

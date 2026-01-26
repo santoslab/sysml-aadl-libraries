@@ -13,8 +13,7 @@
 
   attribute def Data_Rate :> AADL::Property, Data_Rate_Units;
 
-  //attribute def Queue_Size :> AADL::Property, ScalarValues::Integer;
-  alias Queue_Size for ScalarValues::Integer;
+  attribute def Queue_Size :> AADL::Property, ScalarValues::Integer;
 
   enum def Supported_Timing_Protocols {
     enum Sampled;

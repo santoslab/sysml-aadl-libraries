@@ -188,7 +188,7 @@
     attribute Source_Language : Programming_Properties::Source_Language;
     attribute Source_Text : Programming_Properties::Source_Text;
     attribute Stack_Size : Memory_Properties::Stack_Size;
-    attribute Synchronized_Component : Thread_Properties::Synchronized_Component default true;
+    attribute Synchronized_Component : Thread_Properties::Synchronized_Component default true as Thread_Properties::Synchronized_Component;
     attribute Time_Slot : Thread_Properties::Time_Slot;
   }
 
@@ -211,7 +211,7 @@
     doc AADL_Doc /* Virtual Processor, see AADLv2.3 (6.2) */
     attribute :>> category = ComponentCategory::VirtualProcessor;
     attribute Period : Timing_Properties::Period;
-    attribute Runtime_Protection : Thread_Properties::Runtime_Protection default true;
+    attribute Runtime_Protection : Thread_Properties::Runtime_Protection default true as Runtime_Protection;
   }
 
   abstract port def Feature {
@@ -235,14 +235,14 @@
     inout part type : Data;
 
     attribute Base_Address : Memory_Properties::Base_Address;
-    attribute Queue_Size : Communication_Properties::Queue_Size default 1;
+    attribute Queue_Size : Communication_Properties::Queue_Size default 1 as Communication_Properties::Queue_Size;
   }
 
   port def EventPort :> Feature {
     doc AADL_Doc /* Event Port, see AADLv2.3 (8.3) */
 
     attribute Base_Address : Memory_Properties::Base_Address;
-    attribute Queue_Size : Communication_Properties::Queue_Size default 1;
+    attribute Queue_Size : Communication_Properties::Queue_Size default 1 as Communication_Properties::Queue_Size;
   }
 
   port def DataAccess :> Feature {
@@ -269,14 +269,14 @@
     doc AADL_Doc /* Subprogram Access, see AADLv2.3 (8.4) */
     inout ref type : Component;
 
-    attribute Queue_Size : Communication_Properties::Queue_Size default 1;
+    attribute Queue_Size : Communication_Properties::Queue_Size default 1 as Communication_Properties::Queue_Size;
   }
 
   port def SubprogramGroupAccess :> Feature {
     doc AADL_Doc /* Subprogram Group Access, see AADLv2.3 (8.4) */
     inout ref type : Component;
 
-    attribute Queue_Size : Communication_Properties::Queue_Size default 1;
+    attribute Queue_Size : Communication_Properties::Queue_Size default 1 as Communication_Properties::Queue_Size;
   }
 
   abstract connection def Connection :> Connections::BinaryConnection {

@@ -37,7 +37,7 @@ library package HAMR {
   //attribute def Implementation_Language :> AADL::Property, Implementation_Languages;
   alias Implementation_Language for Implementation_Languages;
 
-  enum def Implementation_Languages {
+  enum def Implementation_Languages :> AADL::Property {
     enum Slang;
     enum C;
     enum Rust;
