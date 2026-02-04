@@ -99,7 +99,7 @@
     attribute :>> category = ComponentCategory::Memory;
 
     attribute Base_Address : Memory_Properties::Base_Address;
-    attribute Memory_Protocol : Deployment_Properties::Memory_Protocol default Deployment_Properties::Supported_Memory_Protocols::Read_Write;
+    attribute Memory_Protocol : Deployment_Properties::Memory_Protocol default Deployment_Properties::Supported_Memory_Protocols::Read_Write as Deployment_Properties::Memory_Protocol;
     attribute Memory_Size : Memory_Properties::Memory_Size;
     attribute Word_Size : Memory_Properties::Word_Size;
   }
@@ -165,7 +165,7 @@
     attribute Data_Size : Memory_Properties::Data_Size;
     attribute Deactivate_Deadline : Timing_Properties::Deactivate_Deadline;
     attribute Deactivate_Execution_Time : Timing_Properties::Deactivate_Execution_Time;
-    attribute Deactivation_Policy : Thread_Properties::Deactivation_Policy default Thread_Properties::Supported_Deactivation_Policies::Inactive;
+    attribute Deactivation_Policy : Thread_Properties::Deactivation_Policy default Thread_Properties::Supported_Deactivation_Policies::Inactive as Thread_Properties::Deactivation_Policy;
     attribute Deadline : Timing_Properties::Deadline;
     attribute Dequeue_Protocol : Thread_Properties::Dequeue_Protocol;
     attribute Dispatch_Able : Thread_Properties::Dispatch_Able;

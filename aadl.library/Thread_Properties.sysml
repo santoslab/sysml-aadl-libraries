@@ -8,8 +8,7 @@
   private import AADL_Project::*;
 
   // Dispatch_Protocol: Supported_Dispatch_Protocols applies to (thread, device, virtual processor);
-  //attribute def Dispatch_Protocol :> AADL::Property, Supported_Dispatch_Protocols;
-  alias Dispatch_Protocol for Supported_Dispatch_Protocols;
+  attribute def Dispatch_Protocol :> AADL::Property, Supported_Dispatch_Protocols;
 
   // Dispatch_Able: aadlboolean applies to (thread);
   attribute def Dispatch_Able :> AADL::Property, ScalarValues::Boolean; // do we need a specific aadlboolean?
@@ -94,9 +93,8 @@
   }
   alias Inactive for Supported_Deactivation_Policies::Inactive;
   alias Unloade for Supported_Deactivation_Policies::Unload;
-  //attribute def Deactivation_Policy :> AADL::Property, Supported_Deactivation_Policies;
-  alias Deactivation_Policy for Supported_Deactivation_Policies;
-
+  attribute def Deactivation_Policy :> AADL::Property, Supported_Deactivation_Policies;
+  
   // Runtime_Protection: inherit aadlboolean => true applies to (process, system, virtual processor);
   attribute def Runtime_Protection :>  AADL::Property, ScalarValues::Boolean;
   

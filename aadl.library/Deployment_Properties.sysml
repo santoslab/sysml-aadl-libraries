@@ -32,8 +32,7 @@
   alias Read_Only for Supported_Memory_Protocols::Read_Only;
   alias Write_Only for Supported_Memory_Protocols::Write_Only;
   alias Read_Write for Supported_Memory_Protocols::Read_Write;
-  //attribute def Memory_Protocol :> AADL::Property, Supported_Memory_Protocols;
-  alias Memory_Protocol for Supported_Memory_Protocols;
+  attribute def Memory_Protocol :> AADL::Property, Supported_Memory_Protocols;
     
   // Runtime_Protection_Support: aadlboolean applies to (processor, virtual processor);
   attribute def Runtime_Protection_Support :> AADL::Property, ScalarValues::Boolean;
