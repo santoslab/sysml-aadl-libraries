@@ -1,6 +1,10 @@
 package HAMR_AADL {
   private import AADL::*;
 
+  part def System :> AADL::System {
+    attribute Scheduling: HAMR_Microkit::Scheduling;
+  }
+
   part def Processor :> AADL::Processor {
     attribute Frame_Period: Timing_Properties::Frame_Period;
     attribute Clock_Period: Timing_Properties::Clock_Period;
