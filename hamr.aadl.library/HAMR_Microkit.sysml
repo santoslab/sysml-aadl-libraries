@@ -1,5 +1,8 @@
 library package HAMR_Microkit {
 
+  attribute def Passive :> AADL::Property, ScalarValues::Boolean;
+  attribute def SMC :> AADL::Property, ScalarValues::Boolean;
+
   attribute def Scheduling :> AADL::Property, Scheduling_Type;
 
   enum def Scheduling_Type :> AADL::Property {
