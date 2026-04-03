@@ -2,6 +2,7 @@ library package HAMR {
 
   public import HAMR_Time_Units::*;
   public import HAMR_Microkit::*;
+  public import HAMR_ROS::*;
   public import HAMR_AADL::*;
   public import AADL::*;
   public import Base_Types::*;

@@ -25,6 +25,7 @@ package HAMR_AADL {
   part def Thread :> AADL::Thread {
     attribute Implementation_Language: HAMR::Implementation_Language;
 
+    attribute RosNodeKind: HAMR_ROS::RosNodeKind;
     attribute Passive: HAMR_Microkit::Passive;
     attribute SMC: HAMR_Microkit::SMC;
   }
