@@ -36,18 +36,6 @@ package HAMR_AADL {
   }
 
 
-  abstract port def Port {
-    attribute Port_Provenance: HAMR::Port_Provenance;
-    
-    attribute Ros_Topic_Name: HAMR_ROS::Ros_Topic_Name;
-  }
-
-  port def DataPort :> AADL::DataPort, Port {}
-  port def EventDataPort :> AADL::EventDataPort, Port {}
-  port def EventPort :> AADL::EventPort, Port {}
-
-
-
   part def Data :> AADL::Data {
     attribute Type_Provenance: HAMR::Type_Provenance;
     attribute Native_Name: HAMR::Native_Name;
